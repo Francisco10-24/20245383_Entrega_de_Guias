@@ -1,0 +1,216 @@
+/* Estilos básicos */
+html {
+    font-size: 18px;
+}
+
+body {
+    color: #333;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Encabezado */
+header {
+    background-color: #355664;
+    color: #fcfcfc;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 0 0 8px 8px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+/* Navegación */
+nav {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav span {
+    margin: 0 0.5rem;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* Secciones y artículos */
+section {
+    margin-bottom: 2rem;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+article hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 1rem 0;
+}
+
+/* Imagen de perfil */
+.profile-img {
+    max-width: 200px;
+    border: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #355664;
+}
+
+/* Párrafos */
+article p {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+article p:first-letter {
+    color: #355664;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Listas */
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Hobbies */
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.hobby {
+    flex-basis: 30%;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.hobby h4 {
+    color: #355664;
+    margin-bottom: 0.5rem;
+}
+
+/* Formulario de contacto */
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #355664;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+    
+    .hobbies-container {
+        flex-direction: column;
+    }
+    
+    .hobby {
+        flex-basis: 100%;
+    }
+    
+    nav span {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
