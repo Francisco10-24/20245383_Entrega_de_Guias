@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de cartas */
+body {
+    position: relative;
+    height: 500px;
+}
+
+/* Estilos comunes para todas las cartas */
+#diez_de_diamantes,
+#sota_de_diamantes,
+#reina_de_diamantes,
+#rey_de_diamantes,
+#as_de_diamantes {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Posicionamiento y z-index específico para cada carta */
+#diez_de_diamantes {
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    background-color: #ffcccc;
+}
+
+#sota_de_diamantes {
+    top: 120px;
+    left: 120px;
+    z-index: 2;
+    background-color: #ff9999;
+}
+
+#reina_de_diamantes {
+    top: 140px;
+    left: 140px;
+    z-index: 3;
+    background-color: #ff6666;
+}
+
+#rey_de_diamantes {
+    top: 160px;
+    left: 160px;
+    z-index: 4;
+    background-color: #ff3333;
+}
+
+#as_de_diamantes {
+    top: 180px;
+    left: 180px;
+    z-index: 5;
+    background-color: #ff0000;
+}
+
+/* Estilos para las imágenes dentro de las cartas */
+#diez_de_diamantes img,
+#sota_de_diamantes img,
+#reina_de_diamantes img,
+#rey_de_diamantes img,
+#as_de_diamantes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

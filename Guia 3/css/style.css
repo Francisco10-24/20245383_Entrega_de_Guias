@@ -3,22 +3,35 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Muli', sans-serif;
     text-align: justify;
+    padding-top: 130px; /* Espacio para el header fijo */
+    padding-bottom: 70px; /* Espacio para el footer fijo */
 }
 
-header{
+/* HEADER FIJO */
+header.fijo{
     background: #16A085;
     height: 130px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-footer{
-    margin-top: 20px;
+/* FOOTER FIJO */
+footer.fijo{
     background: #16A085;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0; /* Eliminamos el margen superior original */
 }
 
 header div, footer div{
@@ -30,43 +43,50 @@ header div, footer div{
 h1{
     font-size: 2.3rem;
     margin-bottom: 1rem;
-    padding-top: 0.5 rem;
+    padding-top: 0.5rem;
 }
-
 
 h2{
     font-size: 2rem;
 }
 
-section {
+/* CONTENEDOR PRINCIPAL CON ESPACIOS PARA ELEMENTOS FIJOS */
+.contenido-principal {
     margin: 0 auto;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px 0; /* Espacio adicional para separar del header y footer */
 }
 
-
-section article {
+/* ARTÍCULOS CON DISPLAY FLEX (3 COLUMNAS) */
+.contenido-principal article {
     width: 32.33%;
     height: 340px;
     margin: 0.5%;
     border: 2px dashed #16A085;
     padding: 1%;
     overflow: hidden;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-section article img {
+.contenido-principal article img {
     height: 180px;
     max-width: 80%;
     margin: 5px auto;
     display: block;
 }
 
-section article h3 {
+.contenido-principal article h3 {
     text-align: center;
     margin: 10px 0;
+}
+
+.contenido-principal article p {
+    flex-grow: 1; /* Hace que el párrafo ocupe el espacio restante */
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
 }
 
 footer div {
@@ -74,7 +94,7 @@ footer div {
 }
 
 /* Posicionamiento relativo */
-section article:nth-child(2) {
+.contenido-principal article:nth-child(2) {
     background-color: rgba(70, 130, 180, 0.9);
     position: relative;
     left: 100px;

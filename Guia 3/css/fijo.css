@@ -32,6 +32,8 @@ h1{
     width: 960px;
 }
 
+
+
 #description{
     width: 360px;
     height: 360px;
@@ -46,14 +48,6 @@ h1{
     line-height: 180%;
     text-align: justify;
 }
-/*
-#imgDesc{
-    overflow: hidden;
-}
-
-#imgDesc img{
-    float: left;
-}
 
 /* CONTENIDO PRINCIPAL */
 #principal{
@@ -64,11 +58,12 @@ h1{
 
 #contenido{
     width: 960px;
-    margin: 0 auto;
+    margin: 0px auto;
     clear: left;
     overflow: hidden;
 }
 
+/*Contenido plan*/
 .plan{
     width: 258px;
     padding: 20px;
@@ -82,22 +77,9 @@ h1{
 
 /* PIE DE PÁGINA */
 footer{
-    background-color: #464d52;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-#pie{
-    width: 960px;
-    margin: 0 auto;
-}
-
-/* PIE DE PÁGINA *
-footer{
     text-align: center;
     margin: 0;
-    font-size: 9em;
+    font-size: 1.5em;
     line-height: 2;
     clear: both;
     background-color: #464d52;
@@ -119,8 +101,10 @@ footer{
     margin-right: 0px;
 }
 
-/*
-/* Botones 
+
+
+
+/* Botones */
 .boton{
     background-color:#464d52;
     padding: 7px;
@@ -146,16 +130,12 @@ footer{
 }
 
 
-
-
-/*CONTENIDO PARA INDEX*/
-
-/* CONTENIDO DE LA PÁGINA PLANES 
+/* CONTENIDO DE LA PÁGINA PLANES */
 .planes{
     width: 900px;
     background: white;
     padding: 10px 30px;
-    margin: 20px auto;
+    /*margin: 20px auto;*/
 }
 
 .planes h1{
@@ -167,7 +147,7 @@ footer{
     font-size: 1.1em;
     margin: 20px 0px 5px;
     padding-bottom: 15px;
-    border-bottom: solid 2px #464d52;
+    border-bottom: solid 2px grey;
     font-weight: bold;
 }
 
@@ -177,7 +157,8 @@ footer{
     margin: 10px 0;
 }
 
-/* CONTENIDO DE LA PAGINA GALERIA
+/* CONTENIDO DE LA PAGINA GALERIA*/
+
 #galeria{
     width: 960px;
     margin: 0 auto;
@@ -187,17 +168,16 @@ footer{
 #galeria .plan{
     width: 258px;
     margin: 15px;
-    padding: 10px;
+    padding: 18px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
 }
-
+*/
 #galeria .plan p{
     text-align: center;
     font-style: italic;
     margin-top: 10px;
 }
 
-#galeria .plan{
-    font-size: 1em;
-    margin-bottom: 10px;
-    padding-bottom: 1px;
-}
+
