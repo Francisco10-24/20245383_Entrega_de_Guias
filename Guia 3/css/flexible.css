@@ -19,6 +19,7 @@ h1 {
     color: #464d52;
 }
 
+/*Parte superior*/
 #superior {
     width: 100%;
     padding: 2% 0px;
@@ -34,7 +35,7 @@ h1 {
     max-width: 960px;
 }
 
-/* NUEVO: Contenedor para logo y texto */
+
 #logo-container {
     display: flex;
     align-items: center;
@@ -47,13 +48,18 @@ h1 {
 }
 
 
-#descripcion {
+/*Contenido principal*/
+#description {
     width: 37.5%;
-    height: auto;
-    color: white;
+    padding: 20px;
     background-color: #888;
-    float: left;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: justify;
+    display: flex;
 }
+
 
 #descripcion p{
     margin: 5%;
@@ -79,17 +85,7 @@ h1 {
     display: block;
 }
 
-/* NUEVO: Estilos para el área de descripción */
-#description {
-    width: 37.5%;
-    padding: 20px;
-    background-color: #888;
-    color: white;
-    font-weight: bold;
-    line-height: 1.6;
-    text-align: justify;
-    display: flex;
-}
+
 
 #contenido {
     width: 80%;
@@ -99,6 +95,7 @@ h1 {
     max-width: 960px;
 }
 
+/*Pie de pagina*/
 footer {
     text-align: center;
     margin: 0;
@@ -110,6 +107,7 @@ footer {
     width: 100%;
 }
 
+/*Contenido de la página index*/
 .plan {
     width: 26.7%;
     padding: 2%;
@@ -126,14 +124,17 @@ footer {
     height: auto;
 }
 
+/*Primer div, cuarto div*/
 #contenido div:nth-child(3n+1){
     margin-left: 0px;
 }
 
+/*Tercer div, sexto div*/
 #contenido div:nth-child(3n){
     margin-right: 0px;
 }
 
+/*Botones*/
 .boton {
     background-color: #464d52;
     padding: 8px;
@@ -157,6 +158,8 @@ footer {
     display: block;
 }
 
+
+/*Diseño de sección de planes*/
 .planes {
     width: 94%;
     background: white;
@@ -181,10 +184,13 @@ footer {
     font-weight: bold;
 }
 
+
+/*Diseño de sección de galeria*/
 #galeria .plan p {
     text-align: center;
     font-style: italic;
 }
+
 
 #galeria .plan {
     margin: 30px 1.4% 10px;

@@ -27,21 +27,7 @@ nav a:hover{
     background: rgba(0, 0, 0, 0.5);
 }
 
-/*
-nav ul li {
-    line-height: 40px;
-}
 
-nav ul li a {
-    text-decoration: none;
-    padding: 0 10px;
-    display: block;
-    color: #333;
-}
-
-nav ul li a:hover {
-    background-color: #f0f0f0;
-} */
 
 /* Estilos del primer nivel */
 nav > ul {
