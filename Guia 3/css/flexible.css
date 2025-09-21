@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,6 +23,7 @@ h1 {
     width: 100%;
     padding: 2% 0px;
     background-color: #464d52;
+    min-height: 450px;
 }
 
 #encabezado {
@@ -38,6 +40,10 @@ h1 {
     align-items: center;
     margin: 2% 0px;
     width: 21%;
+}
+
+#logo-container img{
+    display: block;
 }
 
 
@@ -62,27 +68,27 @@ h1 {
     width: 100%;
     display: flex;
     margin-top: 20px;
-    background-color: #666; /* NUEVO: fondo para mejor contraste */
-    border-radius: 8px; /* NUEVO: bordes redondeados */
-    padding: 15px; /* NUEVO: espacio interno */
+    border-radius: 8px; 
+    padding: 15px; 
 }
 
 #imgDesc img {
     float: left;
     width: 62.5%;
     height: auto;
+    display: block;
 }
 
 /* NUEVO: Estilos para el área de descripción */
 #description {
     width: 37.5%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* NUEVO: fondo semitransparente */
+    background-color: #888;
     color: white;
     font-weight: bold;
     line-height: 1.6;
     text-align: justify;
-    border-radius: 8px; /* NUEVO: bordes redondeados */
+    display: flex;
 }
 
 #contenido {
@@ -130,10 +136,10 @@ footer {
 
 .boton {
     background-color: #464d52;
-    padding: 2px;
+    padding: 8px;
     border-radius: 5px;
     color: white;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: .9em;
     text-align: center;
     vertical-align: middle;
@@ -187,5 +193,5 @@ footer {
     vertical-align: top;
     font-size: 1em;
     margin-bottom: 10px;
-    padding-bottom: 1px;
+    padding-bottom: 1px; 
 }

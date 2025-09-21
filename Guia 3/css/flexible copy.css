@@ -43,6 +43,7 @@ h1 {
 
 #descripcion p{
     margin: 5%;
+    width: 37.5%;
     color: white; 
     font-weight: bold;
     line-height: 180%;
