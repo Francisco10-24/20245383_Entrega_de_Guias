@@ -3,28 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía 1 - HTML y CSS</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
-        h1 { color: #333; }
-        .enlace { display: block; margin: 10px 0; padding: 10px; background: #fff; border-radius: 5px; text-decoration: none; color: #0066cc; }
-        .enlace:hover { background: #e0e0e0; }
-    </style>
+    <title>Mi Portafolio Estudiantil - Desarrollo Web I</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Guía 1 - Introducción a HTML y CSS</h1>
-    <h2>Estudiante: 20245383 Francisco David Rauda Guzmán</h2>
-    <a href="estilos_embebidoss.html" class="enlace">Ejercicio 1: Estilos embebidos</a>
-    <a href="ejemplo2.html" class="enlace">Ejercicio 2: Etiqueta style</a>
-    <a href="paises.html" class="enlace">Ejercicio 3: Usando reglas CSS definidas en archivos externos</a>
-    <a href="casa_papel.html" class="enlace">Ejercicio complementario: La Casa de Papel</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="header-title">Mi Portafolio Estudiantil</h1>
+                <p class="header-subtitle">Desarrollo Web I - Ciclo 03-2025</p>
+                <p class="header-description">Un recorrido por mi aprendizaje en desarrollo web frontend</p>
+                <div class="header-badges">
+                    <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="badge"><i class="fas fa-mobile-alt"></i> Responsive</span>
+                    <span class="badge"><i class="fas fa-th"></i> Flexbox</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <h1> Guía 2</h1>
-    <a href="/Guia 2/pelicula.html">Ejercicio de pelicula</a>
-    <a href="/Guia 2/tablero.html"> tablero </a>
-    <a href="/Guia 2/biografia.html"> biografía</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#datos-personales"><i class="fas fa-user"></i> Datos Personales</a></li>
+                <li><a href="#materia"><i class="fas fa-book"></i> La Materia</a></li>
+                <li><a href="#guias"><i class="fas fa-folder-open"></i> Guías</a></li>
+                <li><a href="#foda"><i class="fas fa-chart-bar"></i> Mi FODA</a></li>
+            </ul>
+        </div>
+    </nav>
 
- 
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Datos Personales -->
+            <section id="datos-personales" class="section">
+                <h2 class="section-title">Datos Personales</h2>
+                <div class="personal-grid">
+                    <div class="personal-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Información Académica</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <strong>Nombre:</strong><br>
+                                    Francisco David Rauda Guzman
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-id-card"></i>
+                                <div>
+                                    <strong>Carnet:</strong><br>
+                                    20245383
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-university"></i>
+                                <div>
+                                    <strong>Carrera:</strong><br>
+                                    Ingeniería de Software y Negocios Digitales
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Mi Biografía</h3>
+                        <p>Soy un estudiante apasionado por el desarrollo web. Durante este curso he descubierto mi vocación por crear interfaces atractivas y funcionales que mejoren la experiencia del usuario.</p>
+                        <p>Cada línea de código escrita representa un paso más en mi journey hacia convertirme en un desarrollador web profesional.</p>
+                        <div class="skills">
+                            <span class="skill-tag">HTML5 Semántico</span>
+                            <span class="skill-tag">CSS3 Avanzado</span>
+                            <span class="skill-tag">Diseño Responsive</span>
+                            <span class="skill-tag">Flexbox</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Acerca de la Materia -->
+            <section id="materia" class="section">
+                <h2 class="section-title">Acerca de la Materia</h2>
+                <div class="materia-grid">
+                    <div class="materia-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Descripción del Curso</h3>
+                        <p>Desarrollo Web I es la puerta de entrada al mundo del desarrollo frontend. A través de esta materia he aprendido las tecnologías fundamentales para crear sitios web modernos y profesionales.</p>
+                    </div>
+                    
+                    <div class="materia-card">
+                        <div class="card-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h3>Contenidos Aprendidos</h3>
+                        <ul class="content-list">
+                            <li><i class="fas fa-check"></i> HTML5 y estructura semántica</li>
+                            <li><i class="fas fa-check"></i> CSS3 y propiedades avanzadas</li>
+                            <li><i class="fas fa-check"></i> Selectores y modelo de caja</li>
+                            <li><i class="fas fa-check"></i> Posicionamiento y display</li>
+                            <li><i class="fas fa-check"></i> Flexbox y Grid Layout</li>
+                            <li><i class="fas fa-check"></i> Media Queries responsivas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="materia-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Logros Alcanzados</h3>
+                        <p>He desarrollado la capacidad de transformar diseños en código funcional, crear layouts responsivos y aplicar las mejores prácticas del desarrollo web moderno.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Guías de Ejercicios -->
+            <section id="guias" class="section">
+                <h2 class="section-title">Guías de Ejercicios</h2>
+                <p class="section-subtitle">Mi evolución paso a paso en el desarrollo web</p>
+                
+                <div class="guias-grid">
+                    <div class="guia-card">
+                        <div class="guia-header">
+                            <span class="guia-number">01</span>
+                            <h3>Introducción a HTML y CSS</h3>
+                        </div>
+                        <div class="guia-content">
+                            <p>Mis primeros pasos en el desarrollo web. Aprendí la estructura básica de HTML5 y los fundamentos de CSS para dar estilo a mis primeras páginas web.</p>
+                            <div class="guia-skills">
+                                <span>Estructura HTML</span>
+                                <span>CSS Básico</span>
+                                <span>Semántica Web</span>
+                            </div>
+                            <a href=".../Guia 1/index.html" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Ver Ejercicios
+                                
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="guia-card">
+                        <div class="guia-header">
+                            <span class="guia-number">02</span>
+                            <h3>Selectores CSS y Modelo de Caja</h3>
+                        </div>
+                        <div class="guia-content">
+                            <p>Profundicé en CSS aprendiendo selectores avanzados, el modelo de caja, y cómo controlar el layout de manera más precisa y eficiente.</p>
+                            <div class="guia-skills">
+                                <span>Selectores CSS</span>
+                                <span>Box Model</span>
+                                <span>Especificidad</span>
+                            </div>
+                            <a href="/Guia 1/css/estilos_serie.css" class="btn" target="_blank">
+                            <a href="/Guia 1/casa_papel.html">
+                                <i class="fas fa-external-link-alt"></i> Ver Ejercicios
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="guia-card">
+                        <div class="guia-header">
+                            <span class="guia-number">03</span>
+                            <h3>Posicionamiento y Maquetación</h3>
+                        </div>
+                        <div class="guia-content">
+                            <p>Aprendí técnicas avanzadas de posicionamiento y cómo maquetar sitios web complejos. Un reto que me permitió entender layouts reales.</p>
+                            <div class="guia-skills">
+                                <span>Posicionamiento</span>
+                                <span>Display</span>
+                                <span>Maquetación</span>
+                            </div>
+                            <a href= "https://github.com/Francisco10-24/20245383_Entrega_de_Guias/tree/main/Guia%203" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Ver Ejercicios
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="guia-card">
+                        <div class="guia-header">
+                            <span class="guia-number">04</span>
+                            <h3>Responsive Design</h3>
+                        </div>
+                        <div class="guia-content">
+                            <p>El mundo mobile-first! Aprendí a crear diseños que se adaptan a cualquier dispositivo usando media queries, flexbox y técnicas responsivas.</p>
+                            <div class="guia-skills">
+                                <span>Media Queries</span>
+                                <span>Flexbox</span>
+                                <span>Mobile First</span>
+                            </div>
+                            <a href="https://github.com/Francisco10-24/20245383_Entrega_de_Guias/tree/main/Guia%204" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Ver Ejercicios
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FODA -->
+            <section id="foda" class="section">
+                <h2 class="section-title">Mi Análisis FODA</h2>
+                <p class="section-subtitle">Una reflexión honesta sobre mi aprendizaje</p>
+                
+                <div class="foda-grid">
+                    <div class="foda-card fortalezas">
+                        <div class="foda-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Fortalezas</h3>
+                        <p><strong>¿Qué habilidades he dominado significativamente?</strong></p>
+                        <ul>
+                            <li>Comprensión sólida de HTML5 semántico</li>
+                            <li>Manejo avanzado de CSS3 y Flexbox</li>
+                            <li>Capacidad para crear diseños responsivos</li>
+                            <li>Buen ojo para el diseño y UX</li>
+                            <li>Habilidad para resolver problemas de CSS</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="foda-card oportunidades">
+                        <div class="foda-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3>Oportunidades</h3>
+                        <p><strong>¿Qué puedo aplicar en otros proyectos?</strong></p>
+                        <ul>
+                            <li>Base para aprender frameworks CSS</li>
+                            <li>Preparación ideal para JavaScript</li>
+                            <li>Capacidad para crear portafolios personales</li>
+                            <li>Habilidades aplicables en diseño UI/UX</li>
+                            <li>Oportunidades de freelance básico</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="foda-card debilidades">
+                        <div class="foda-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Debilidades</h3>
+                        <p><strong>¿Qué áreas necesito mejorar?</strong></p>
+                        <ul>
+                            <li>CSS Grid Layout necesita práctica</li>
+                            <li>Animaciones CSS avanzadas</li>
+                            <li>Optimización de performance</li>
+                            <li>Metodologías CSS (BEM)</li>
+                            <li>Preprocesadores (SASS/LESS)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="foda-card amenazas">
+                        <div class="foda-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Amenazas</h3>
+                        <p><strong>¿Qué obstáculos enfrenté?</strong></p>
+                        <ul>
+                            <li>Curva de aprendizaje inicial</li>
+                            <li>Compatibilidad entre navegadores</li>
+                            <li>Manejo del tiempo con múltiples materias</li>
+                            <li>Mantener la práctica constante</li>
+                            <li>Actualización constante de estándares</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-code"></i> Portafolio Estudiantil</h3>
+                    <p>Desarrollo Web I - Ciclo 03-2025</p>
+                    <p>ESEN - Ingeniería de Software</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-user"></i> Francisco David Rauda Guzman</p>
+                    <p><i class="fas fa-id-card"></i> 20245383 </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Francisco Rauda. Desarrollado con 💙 usando HTML y CSS</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
