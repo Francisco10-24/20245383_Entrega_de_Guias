@@ -6,53 +6,53 @@
 }
 
 :root {
-    --primario: #667eea;
-    --primario-oscuro: #5a6fd8;
-    --secundario: #764ba2;
-    --exito: #4CAF50;
-    --advertencia: #FF9800;
-    --peligro: #f44336;
+    --primary: #667eea;
+    --primary-dark: #5a6fd8;
+    --secondary: #764ba2;
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --danger: #f44336;
     --info: #2196F3;
-    --oscuro: #2d3748;
-    --claro: #f7fafc;
-    --gris: #718096;
+    --dark: #2d3748;
+    --light: #f7fafc;
+    --gray: #718096;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--oscuro);
+    color: var(--dark);
     background-color: #f8fafc;
 }
 
-.contenedor {
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Encabezado */
-.encabezado {
-    background: linear-gradient(135deg, var(--primario) 0%, var(--secundario) 100%);
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
 }
 
-.titulo-encabezado {
+.header-title {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.subtitulo-encabezado {
+.header-subtitle {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
 }
 
-.descripcion-encabezado {
+.header-description {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.8;
@@ -61,14 +61,14 @@ body {
     margin-right: auto;
 }
 
-.insignias-encabezado {
+.header-badges {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.insignia {
+.badge {
     background: rgba(255, 255, 255, 0.2);
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -80,8 +80,8 @@ body {
     gap: 0.5rem;
 }
 
-/* Navegación */
-.navegacion {
+/* Navigation */
+.navbar {
     background: white;
     padding: 1rem 0;
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
@@ -90,15 +90,15 @@ body {
     z-index: 1000;
 }
 
-.enlaces-navegacion {
+.nav-links {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 3rem;
 }
 
-.enlaces-navegacion a {
-    color: var(--oscuro);
+.nav-links a {
+    color: var(--dark);
     text-decoration: none;
     font-weight: 500;
     display: flex;
@@ -109,45 +109,45 @@ body {
     border-radius: 25px;
 }
 
-.enlaces-navegacion a:hover {
-    color: var(--primario);
-    background: var(--claro);
+.nav-links a:hover {
+    color: var(--primary);
+    background: var(--light);
 }
 
-/* Secciones Principales */
-.principal {
+/* Main Sections */
+.main {
     padding: 3rem 0;
 }
 
-.seccion {
+.section {
     margin-bottom: 4rem;
 }
 
-.titulo-seccion {
+.section-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primario), var(--secundario));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.subtitulo-seccion {
+.section-subtitle {
     text-align: center;
-    color: var(--gris);
+    color: var(--gray);
     margin-bottom: 3rem;
     font-size: 1.1rem;
 }
 
-/* Información Personal */
-.grid-personal {
+/* Personal Info */
+.personal-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.tarjeta-personal {
+.personal-card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -155,14 +155,14 @@ body {
     transition: transform 0.3s ease;
 }
 
-.tarjeta-personal:hover {
+.personal-card:hover {
     transform: translateY(-5px);
 }
 
-.icono-tarjeta {
+.card-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primario), var(--secundario));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -172,61 +172,61 @@ body {
     color: white;
 }
 
-.tarjeta-personal h3 {
-    color: var(--oscuro);
+.personal-card h3 {
+    color: var(--dark);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }
 
-.lista-informacion {
+.info-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.item-informacion {
+.info-item {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
-    background: var(--claro);
+    background: var(--light);
     border-radius: 10px;
     transition: background 0.3s ease;
 }
 
-.item-informacion:hover {
+.info-item:hover {
     background: #e2e8f0;
 }
 
-.item-informacion i {
-    color: var(--primario);
+.info-item i {
+    color: var(--primary);
     margin-top: 0.2rem;
 }
 
-.habilidades {
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1.5rem;
 }
 
-.etiqueta-habilidad {
-    background: linear-gradient(135deg, var(--primario), var(--secundario));
+.skill-tag {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
 }
 
-/* Grid de Materia */
-.grid-materia {
+/* Materia Grid */
+.materia-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.tarjeta-materia {
+.materia-card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -235,41 +235,41 @@ body {
     transition: transform 0.3s ease;
 }
 
-.tarjeta-materia:hover {
+.materia-card:hover {
     transform: translateY(-5px);
 }
 
-.tarjeta-materia h3 {
-    color: var(--oscuro);
+.materia-card h3 {
+    color: var(--dark);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-.lista-contenidos {
+.content-list {
     list-style: none;
     text-align: left;
 }
 
-.lista-contenidos li {
+.content-list li {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.lista-contenidos i {
-    color: var(--exito);
+.content-list i {
+    color: var(--success);
 }
 
-/* Grid de Guías */
-.grid-guias {
+/* Guías Grid */
+.guias-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.tarjeta-guia {
+.guia-card {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -277,12 +277,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-.tarjeta-guia:hover {
+.guia-card:hover {
     transform: translateY(-5px);
 }
 
-.encabezado-guia {
-    background: linear-gradient(135deg, var(--primario), var(--secundario));
+.guia-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     padding: 1.5rem;
     display: flex;
@@ -290,7 +290,7 @@ body {
     gap: 1rem;
 }
 
-.numero-guia {
+.guia-number {
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
@@ -302,42 +302,42 @@ body {
     font-size: 1.1rem;
 }
 
-.encabezado-guia h3 {
+.guia-header h3 {
     font-size: 1.2rem;
 }
 
-.contenido-guia {
+.guia-content {
     padding: 1.5rem;
 }
 
-.contenido-guia p {
+.guia-content p {
     margin-bottom: 1rem;
-    color: var(--gris);
+    color: var(--gray);
 }
 
-.habilidades-guia {
+.guia-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 1rem 0;
 }
 
-.habilidades-guia span {
-    background: var(--claro);
-    color: var(--primario);
+.guia-skills span {
+    background: var(--light);
+    color: var(--primary);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
-    border: 1px solid var(--primario);
+    border: 1px solid var(--primary);
 }
 
-/* Botones */
-.boton {
+/* Buttons */
+.btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, var(--primario), var(--secundario));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -347,20 +347,20 @@ body {
     cursor: pointer;
 }
 
-.boton:hover {
+.btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* Grid FODA */
-.grid-foda {
+/* FODA Grid */
+.foda-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.tarjeta-foda {
+.foda-card {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -370,7 +370,7 @@ body {
     overflow: hidden;
 }
 
-.tarjeta-foda::before {
+.foda-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -379,11 +379,11 @@ body {
     height: 4px;
 }
 
-.tarjeta-foda:hover {
+.foda-card:hover {
     transform: translateY(-5px);
 }
 
-.icono-foda {
+.foda-icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -395,23 +395,23 @@ body {
     color: white;
 }
 
-.tarjeta-foda h3 {
+.foda-card h3 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-.tarjeta-foda ul {
+.foda-card ul {
     list-style: none;
     margin-top: 1rem;
 }
 
-.tarjeta-foda li {
+.foda-card li {
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
-.tarjeta-foda li::before {
+.foda-card li::before {
     content: '▸';
     position: absolute;
     left: 0;
@@ -419,22 +419,22 @@ body {
 }
 
 .fortalezas::before {
-    background: var(--exito);
+    background: var(--success);
 }
 
-.fortalezas .icono-foda {
-    background: var(--exito);
+.fortalezas .foda-icon {
+    background: var(--success);
 }
 
 .fortalezas li::before {
-    color: var(--exito);
+    color: var(--success);
 }
 
 .oportunidades::before {
     background: var(--info);
 }
 
-.oportunidades .icono-foda {
+.oportunidades .foda-icon {
     background: var(--info);
 }
 
@@ -443,157 +443,164 @@ body {
 }
 
 .debilidades::before {
-    background: var(--advertencia);
+    background: var(--warning);
 }
 
-.debilidades .icono-foda {
-    background: var(--advertencia);
+.debilidades .foda-icon {
+    background: var(--warning);
 }
 
 .debilidades li::before {
-    color: var(--advertencia);
+    color: var(--warning);
 }
 
 .amenazas::before {
-    background: var(--peligro);
+    background: var(--danger);
 }
 
-.amenazas .icono-foda {
-    background: var(--peligro);
+.amenazas .foda-icon {
+    background: var(--danger);
 }
 
 .amenazas li::before {
-    color: var(--peligro);
+    color: var(--danger);
 }
 
-/* Pie de Página */
-.pie-pagina {
-    background: var(--oscuro);
+/* Footer */
+.footer {
+    background: var(--dark);
     color: white;
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
 
-.contenido-pie {
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 2rem;
 }
 
-.info-pie h3 {
+.footer-info h3 {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.contacto-pie p {
+.footer-contact p {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.base-pie {
+.footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
-    color: var(--gris);
+    color: var(--gray);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .personal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .materia-grid,
+    .guias-grid,
+    .foda-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .header-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .personal-card,
+    .materia-card,
+    .guia-content,
+    .foda-card {
+        padding: 1.5rem;
+    }
+    
+    .header-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background: var(--primary);
+    color: white;
+}
+
+/* Agrega esto al final de tu style.css actual */
+
 /* Estilos para los enlaces de guías */
-.enlaces-guia {
+.guia-links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.enlaces-guia .boton {
+.guia-links .btn {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
     justify-content: center;
     text-align: center;
 }
 
-/* Diseño Responsive */
+/* Mejoras responsive para los enlaces */
 @media (max-width: 768px) {
-    .titulo-encabezado {
-        font-size: 2.5rem;
-    }
-    
-    .enlaces-navegacion {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    
-    .grid-personal {
-        grid-template-columns: 1fr;
-    }
-    
-    .contenido-pie {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .grid-materia,
-    .grid-guias,
-    .grid-foda {
-        grid-template-columns: 1fr;
-    }
-    
-    .enlaces-guia .boton {
+    .guia-links .btn {
         font-size: 0.85rem;
         padding: 0.5rem 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
-    .contenedor {
-        width: 95%;
-        padding: 0 15px;
-    }
-    
-    .titulo-encabezado {
-        font-size: 2rem;
-    }
-    
-    .titulo-seccion {
-        font-size: 2rem;
-    }
-    
-    .tarjeta-personal,
-    .tarjeta-materia,
-    .contenido-guia,
-    .tarjeta-foda {
-        padding: 1.5rem;
-    }
-    
-    .insignias-encabezado {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .enlaces-guia {
+    .guia-links {
         gap: 0.3rem;
     }
     
-    .enlaces-guia .boton {
+    .guia-links .btn {
         font-size: 0.8rem;
         padding: 0.4rem 0.7rem;
     }
 }
-
-/* Desplazamiento suave */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Color de selección */
-::selection {
-    background: var(--primario);
-    color: white;
-} 
