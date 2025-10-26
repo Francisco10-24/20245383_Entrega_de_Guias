@@ -6,53 +6,53 @@
 }
 
 :root {
-    --primary: #667eea;
-    --primary-dark: #5a6fd8;
-    --secondary: #764ba2;
-    --success: #4CAF50;
-    --warning: #FF9800;
-    --danger: #f44336;
+    --primario: #667eea;
+    --primario-oscuro: #5a6fd8;
+    --secundario: #764ba2;
+    --exito: #4CAF50;
+    --advertencia: #FF9800;
+    --peligro: #f44336;
     --info: #2196F3;
-    --dark: #2d3748;
-    --light: #f7fafc;
-    --gray: #718096;
+    --oscuro: #2d3748;
+    --claro: #f7fafc;
+    --gris: #718096;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: var(--dark);
+    color: var(--oscuro);
     background-color: #f8fafc;
 }
 
-.container {
+.contenedor {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header */
-.header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, var(--primario) 0%, var(--secundario) 100%);
     color: white;
     padding: 4rem 0;
     text-align: center;
 }
 
-.header-title {
+.titulo-encabezado {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.header-subtitle {
+.subtitulo-encabezado {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
 }
 
-.header-description {
+.descripcion-encabezado {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     opacity: 0.8;
@@ -61,14 +61,14 @@ body {
     margin-right: auto;
 }
 
-.header-badges {
+.insignias-encabezado {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.badge {
+.insignia {
     background: rgba(255, 255, 255, 0.2);
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -80,8 +80,8 @@ body {
     gap: 0.5rem;
 }
 
-/* Navigation */
-.navbar {
+/* Navegación */
+.navegacion {
     background: white;
     padding: 1rem 0;
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
@@ -90,15 +90,15 @@ body {
     z-index: 1000;
 }
 
-.nav-links {
+.enlaces-navegacion {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 3rem;
 }
 
-.nav-links a {
-    color: var(--dark);
+.enlaces-navegacion a {
+    color: var(--oscuro);
     text-decoration: none;
     font-weight: 500;
     display: flex;
@@ -109,45 +109,45 @@ body {
     border-radius: 25px;
 }
 
-.nav-links a:hover {
-    color: var(--primary);
-    background: var(--light);
+.enlaces-navegacion a:hover {
+    color: var(--primario);
+    background: var(--claro);
 }
 
-/* Main Sections */
-.main {
+/* Secciones Principales */
+.principal {
     padding: 3rem 0;
 }
 
-.section {
+.seccion {
     margin-bottom: 4rem;
 }
 
-.section-title {
+.titulo-seccion {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primario), var(--secundario));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.section-subtitle {
+.subtitulo-seccion {
     text-align: center;
-    color: var(--gray);
+    color: var(--gris);
     margin-bottom: 3rem;
     font-size: 1.1rem;
 }
 
-/* Personal Info */
-.personal-grid {
+/* Información Personal */
+.grid-personal {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.personal-card {
+.tarjeta-personal {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -155,14 +155,14 @@ body {
     transition: transform 0.3s ease;
 }
 
-.personal-card:hover {
+.tarjeta-personal:hover {
     transform: translateY(-5px);
 }
 
-.card-icon {
+.icono-tarjeta {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primario), var(--secundario));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -172,61 +172,61 @@ body {
     color: white;
 }
 
-.personal-card h3 {
-    color: var(--dark);
+.tarjeta-personal h3 {
+    color: var(--oscuro);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }
 
-.info-list {
+.lista-informacion {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.info-item {
+.item-informacion {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
     padding: 1rem;
-    background: var(--light);
+    background: var(--claro);
     border-radius: 10px;
     transition: background 0.3s ease;
 }
 
-.info-item:hover {
+.item-informacion:hover {
     background: #e2e8f0;
 }
 
-.info-item i {
-    color: var(--primary);
+.item-informacion i {
+    color: var(--primario);
     margin-top: 0.2rem;
 }
 
-.skills {
+.habilidades {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1.5rem;
 }
 
-.skill-tag {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+.etiqueta-habilidad {
+    background: linear-gradient(135deg, var(--primario), var(--secundario));
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
 }
 
-/* Materia Grid */
-.materia-grid {
+/* Grid de Materia */
+.grid-materia {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.materia-card {
+.tarjeta-materia {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -235,41 +235,41 @@ body {
     transition: transform 0.3s ease;
 }
 
-.materia-card:hover {
+.tarjeta-materia:hover {
     transform: translateY(-5px);
 }
 
-.materia-card h3 {
-    color: var(--dark);
+.tarjeta-materia h3 {
+    color: var(--oscuro);
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-.content-list {
+.lista-contenidos {
     list-style: none;
     text-align: left;
 }
 
-.content-list li {
+.lista-contenidos li {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.content-list i {
-    color: var(--success);
+.lista-contenidos i {
+    color: var(--exito);
 }
 
-/* Guías Grid */
-.guias-grid {
+/* Grid de Guías */
+.grid-guias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.guia-card {
+.tarjeta-guia {
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -277,12 +277,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-.guia-card:hover {
+.tarjeta-guia:hover {
     transform: translateY(-5px);
 }
 
-.guia-header {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+.encabezado-guia {
+    background: linear-gradient(135deg, var(--primario), var(--secundario));
     color: white;
     padding: 1.5rem;
     display: flex;
@@ -290,7 +290,7 @@ body {
     gap: 1rem;
 }
 
-.guia-number {
+.numero-guia {
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
@@ -302,42 +302,42 @@ body {
     font-size: 1.1rem;
 }
 
-.guia-header h3 {
+.encabezado-guia h3 {
     font-size: 1.2rem;
 }
 
-.guia-content {
+.contenido-guia {
     padding: 1.5rem;
 }
 
-.guia-content p {
+.contenido-guia p {
     margin-bottom: 1rem;
-    color: var(--gray);
+    color: var(--gris);
 }
 
-.guia-skills {
+.habilidades-guia {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 1rem 0;
 }
 
-.guia-skills span {
-    background: var(--light);
-    color: var(--primary);
+.habilidades-guia span {
+    background: var(--claro);
+    color: var(--primario);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.8rem;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primario);
 }
 
-/* Buttons */
-.btn {
+/* Botones */
+.boton {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primario), var(--secundario));
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -347,20 +347,20 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
+.boton:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* FODA Grid */
-.foda-grid {
+/* Grid FODA */
+.grid-foda {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.foda-card {
+.tarjeta-foda {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -370,7 +370,7 @@ body {
     overflow: hidden;
 }
 
-.foda-card::before {
+.tarjeta-foda::before {
     content: '';
     position: absolute;
     top: 0;
@@ -379,11 +379,11 @@ body {
     height: 4px;
 }
 
-.foda-card:hover {
+.tarjeta-foda:hover {
     transform: translateY(-5px);
 }
 
-.foda-icon {
+.icono-foda {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -395,23 +395,23 @@ body {
     color: white;
 }
 
-.foda-card h3 {
+.tarjeta-foda h3 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
-.foda-card ul {
+.tarjeta-foda ul {
     list-style: none;
     margin-top: 1rem;
 }
 
-.foda-card li {
+.tarjeta-foda li {
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
 }
 
-.foda-card li::before {
+.tarjeta-foda li::before {
     content: '▸';
     position: absolute;
     left: 0;
@@ -419,22 +419,22 @@ body {
 }
 
 .fortalezas::before {
-    background: var(--success);
+    background: var(--exito);
 }
 
-.fortalezas .foda-icon {
-    background: var(--success);
+.fortalezas .icono-foda {
+    background: var(--exito);
 }
 
 .fortalezas li::before {
-    color: var(--success);
+    color: var(--exito);
 }
 
 .oportunidades::before {
     background: var(--info);
 }
 
-.oportunidades .foda-icon {
+.oportunidades .icono-foda {
     background: var(--info);
 }
 
@@ -443,164 +443,157 @@ body {
 }
 
 .debilidades::before {
-    background: var(--warning);
+    background: var(--advertencia);
 }
 
-.debilidades .foda-icon {
-    background: var(--warning);
+.debilidades .icono-foda {
+    background: var(--advertencia);
 }
 
 .debilidades li::before {
-    color: var(--warning);
+    color: var(--advertencia);
 }
 
 .amenazas::before {
-    background: var(--danger);
+    background: var(--peligro);
 }
 
-.amenazas .foda-icon {
-    background: var(--danger);
+.amenazas .icono-foda {
+    background: var(--peligro);
 }
 
 .amenazas li::before {
-    color: var(--danger);
+    color: var(--peligro);
 }
 
-/* Footer */
-.footer {
-    background: var(--dark);
+/* Pie de Página */
+.pie-pagina {
+    background: var(--oscuro);
     color: white;
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
 
-.footer-content {
+.contenido-pie {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 2rem;
 }
 
-.footer-info h3 {
+.info-pie h3 {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.footer-contact p {
+.contacto-pie p {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.footer-bottom {
+.base-pie {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
-    color: var(--gray);
+    color: var(--gris);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-title {
-        font-size: 2.5rem;
-    }
-    
-    .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    
-    .personal-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
-    
-    .materia-grid,
-    .guias-grid,
-    .foda-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 95%;
-        padding: 0 15px;
-    }
-    
-    .header-title {
-        font-size: 2rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .personal-card,
-    .materia-card,
-    .guia-content,
-    .foda-card {
-        padding: 1.5rem;
-    }
-    
-    .header-badges {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Selection color */
-::selection {
-    background: var(--primary);
-    color: white;
-}
-
-/* Agrega esto al final de tu style.css actual */
 
 /* Estilos para los enlaces de guías */
-.guia-links {
+.enlaces-guia {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.guia-links .btn {
+.enlaces-guia .boton {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
     justify-content: center;
     text-align: center;
 }
 
-/* Mejoras responsive para los enlaces */
+/* Diseño Responsive */
 @media (max-width: 768px) {
-    .guia-links .btn {
+    .titulo-encabezado {
+        font-size: 2.5rem;
+    }
+    
+    .enlaces-navegacion {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .grid-personal {
+        grid-template-columns: 1fr;
+    }
+    
+    .contenido-pie {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .grid-materia,
+    .grid-guias,
+    .grid-foda {
+        grid-template-columns: 1fr;
+    }
+    
+    .enlaces-guia .boton {
         font-size: 0.85rem;
         padding: 0.5rem 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
-    .guia-links {
+    .contenedor {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .titulo-encabezado {
+        font-size: 2rem;
+    }
+    
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+    
+    .tarjeta-personal,
+    .tarjeta-materia,
+    .contenido-guia,
+    .tarjeta-foda {
+        padding: 1.5rem;
+    }
+    
+    .insignias-encabezado {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enlaces-guia {
         gap: 0.3rem;
     }
     
-    .guia-links .btn {
+    .enlaces-guia .boton {
         font-size: 0.8rem;
         padding: 0.4rem 0.7rem;
     }
 }
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Color de selección */
+::selection {
+    background: var(--primario);
+    color: white;
+} 
