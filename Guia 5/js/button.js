@@ -21,7 +21,7 @@ function capturanDatos() {
     alert(`Su nombre es ${nombre} y su edad ${edad}`);
 }
 
-function dibujarParnafo() {
+function dibujarParrafo() {
     let parrafo = prompt(
         "Escriba la información que desea visualizar en el parrafo"
     );
@@ -31,4 +31,4 @@ function dibujarParnafo() {
 
     const p = document.querySelector("#idParnafo");
     p.innerHTML = parrafo;
-}
+} 
