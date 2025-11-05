@@ -47,6 +47,25 @@
     </header>
     <div class="container-lg">
            <!-- CONTINUAR CON EL CODIGO AQUI -->
+            <div class="row">
+    <div class="col-12">
+        <div class="shadow-lg p-3 mt-5 bg-body rounded">
+            <h3>Calculando el factorial de un número</h3>
+            <form onsubmit="return false">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="idTxtNumero" placeholder="Ingrese un número">
+                    <label for="idTxtNumero">
+                        <i class="bi bi-calculator"></i> Ingrese un número
+                    </label>
+                </div>
+                <button type="button" class="btn btn-success" id="idBtnCalcular">
+                    <i class="bi bi-calculator-fill"></i> Calcular factorial
+                </button>
+            </form>
+            <div id="idDivResultado" class="fs-4 p-3 text-success"></div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
