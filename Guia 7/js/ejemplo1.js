@@ -184,3 +184,73 @@ document.getElementById("idModal").addEventListener("shown.bs.modal", () => {
     // inicializando puntero en el campo del titulo para el control
     tituloElemento.focus(); 
 });
+
+// Función para validar que el ID no se repita
+const validarIDUnico = function (id) {
+    const elementoExistente = document.getElementById(id);
+    return elementoExistente === null;
+};
+
+// Modificamos la función buttonAddElemento.onclick
+buttonAddElemento.onclick = () => {
+    if (nombreElemento.value != "" && tituloElemento.value != "") {
+        let idPropuesto = `id${nombreElemento.value}`;
+        
+        // Validar que el ID no se repita
+        if (!validarIDUnico(idPropuesto)) {
+            alert(`Error: Ya existe un control con el ID "${idPropuesto}". Por favor use un nombre diferente.`);
+            return;
+        }
+        
+        let elemento = cmbElemento.value;
+        
+        if (elemento == "select") {
+            newSelect();
+        } else if (elemento == "radio" || elemento == "checkbox") {
+            newRadioCheckbox(elemento);
+        } else {
+            newInput(elemento);
+        }
+    } else {
+        alert("Faltan campos por completar");
+    }
+};
+
+// Referencia al nuevo botón de validación
+const buttonValidar = document.getElementById("idBtnValidar");
+
+// Función para validar el formulario
+const validarFormulario = function () {
+    const elementos = newForm.elements;
+    let errores = [];
+
+    for (let i = 0; i < elementos.length; i++) {
+        const elemento = elementos[i];
+        
+        // Validar campos de texto, number, date, password
+        if (['text', 'number', 'date', 'password', 'email', 'color'].includes(elemento.type)) {
+            if (!elemento.value.trim()) {
+                errores.push(`El campo "${elemento.placeholder || elemento.name}" está vacío`);
+            }
+        }
+        
+        // Validar select
+        if (elemento.nodeName === 'SELECT' && elemento.selectedIndex === 0) {
+            errores.push(`El select "${elemento.name}" no tiene opción seleccionada`);
+        }
+        
+        // Validar textarea
+        if (elemento.nodeName === 'TEXTAREA' && !elemento.value.trim()) {
+            errores.push(`El textarea "${elemento.placeholder || elemento.name}" está vacío`);
+        }
+    }
+
+    if (errores.length > 0) {
+        alert("Errores de validación:\n\n" + errores.join('\n'));
+    } else {
+        alert("¡Todos los campos están correctamente llenos!");
+    }
+};
+
+// Evento para el botón de validación
+buttonValidar.onclick = validarFormulario;
